@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #4a21fc;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*info box*/
+
+.info-section {
+    width: 35%;
+    color: white;
+}
+
+.logo {
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    border: .1em solid white;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.info-box {
+    bottom: 60px;
+    position: absolute;
+    padding: 55px;
+}
+
+.info-box h4 {
+    font-size: 1.2em;
+}
+
+.info-box p {
+    font-size: .89em;
+}
+
+.icon-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0 10px;
+}
+
+a:first-child {
+    padding: 0 10px 0 0;
+}
+
+.icon-section a:hover {
+    color: #f8ff21;
+}
+
+/*content section*/
+
+.content-section {
+    background: white;
+    width: 65%;
+    margin-left: 35%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 0 25px;
+    height: 100%;
+}
+
+/*contact section*/
+
+.img-container {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    height: 100%;
+}
+
+
+.contact-box {
+    padding: 50px 30px;
+    position: absolute;
+    top: 56px;
+    left: -200px;
+    width: 450px;
+    height: calc(100% - 112px);
+    background: #13121F;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+    -moz-box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+    box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+
+
+
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #FDFDFD;
+}
+
+.contact-box input {
+    width: 95%;
+    height: 3em;
+    margin-bottom: 1.5em;
+    background: #13121F;
+    border: none;
+    color: #FDFDFD;
+    border-bottom: 1px solid #FDFDFD;
+}
+
+.contact-box input:focus {
+    outline: none;
+}
+
+textarea {
+    width: 95%;
+    height: 20em;
+    margin-bottom: 2em;
+    background: #13121F;
+    border: none;
+    color: #FDFDFD;
+    border-bottom: 1px solid #FDFDFD;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.submit-btn {
+    position: relative;
+    background: #4a21fc;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    color: #FDFDFD;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+
+/* contact info section*/
+
+.contact-info {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 4em;
+    position: absolute;
+}
+
+.profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 56px;
+    grid-row-gap: 20px;
+    max-width: 1000px;
+}
+
+.contact-info-box {
+    position: relative;
+    padding: 30px;
+    width: 20em;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 2em;
+}
+
+.contact-info-box:hover {
+    -webkit-box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+    -moz-box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+    box-shadow: 0px 0px 74px -10px rgba(89, 89, 89, 1);
+}
+
+.profile h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1em;
+    margin-bottom: 30px;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.profile h5 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.profile p {
+    margin-bottom: 1em;
+    color: darkgrey;
+}
+
+
+
+/*menu*/
+
+.hamburger-menu {
+    position: fixed;
+    right: 36px;
+    top: 26px;
+    padding: 20px;
+}
+
+.hamburger-menu .fa-bars {
+    color: black;
+    font-size: 2em;
+}
+
+.menu {
+    background: #4a21fc;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out;
+    visibility: hidden;
+
+}
+
+.active {
+    transform: translate(0, 0);
+    visibility: visible;
+}
+
+nav {
+    width: 400px;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: white;
+    padding: .4em;
+}
+
+.menu a:hover {
+    color: lightgray;
+}
+
+.exit-ham-menu {
+    position: fixed;
+    right: 36px;
+    top: 20px;
+    padding: 20px;
+    visibility: visible;
+}
+
+.exit-ham-menu .fa-bars {
+    color: white;
+    font-size: 2em;
+}
+
+
+/*Media Query*/
+
+/*phone*/
+
+@media (max-width:767px) {
+    .info-section {
+        position: static;
+        padding: 100px;
+    }
+    .content-section {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .img-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 56px 20px 0;
+    }
+    .contact-box {
+        position: static;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contact-info {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+
+}
+
+/*tablet*/
+
+@media (min-width:768px) and (max-width:992px) {
+    .info-section {
+        position: static;
+        padding: 100px;
+    }
+    .content-section {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .img-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 56px 20px 0;
+    }
+    .contact-box {
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contact-info {
+        top: 70%;
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+}
+
+/*laptop*/
+
+@media (min-width:992px) and (max-width:1199px) {
+    .info-section {
+        position: static;
+        padding: 100px;
+    }
+    .content-section {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .img-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 56px 20px 0;
+    }
+    .contact-box {
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contact-info {
+        top: 70%;
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+}
+
+/*extra big*/
+
+@media (min-width:1200px) and (max-width:1368px) {}
+
+/*Smaller phone in height*/
+
+@media (min-height:500px) and (max-height:700px) {
+    .info-section {
+        position: static;
+        padding: 50px;
+    }
+    .content-section {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .img-container {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        padding: 56px 20px 0;
+    }
+    .contact-box {
+        position: static;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contact-info {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*/

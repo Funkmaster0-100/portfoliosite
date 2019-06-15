@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #4a21fc;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*info box*/
+
+.info-section {
+    width: 20%;
+    color: white;
+}
+
+.logo {
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    border: .1em solid white;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.info-box {
+    bottom: 60px;
+    position: absolute;
+    padding: 55px;
+}
+
+.info-box h4 {
+    font-size: 1.2em;
+}
+
+.info-box p {
+    font-size: .89em;
+}
+
+.icon-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0 10px;
+}
+
+a:first-child {
+    padding: 0 10px 0 0;
+}
+
+.icon-section a:hover {
+    color: #f8ff21;
+}
+
+/*content section*/
+
+.content-section {
+    background: white;
+    width: 80%;
+    margin-left: 20%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+/*experience section*/
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: .8em;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-box1 {
+    position: relative;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background: url('https://cdn.dribbble.com/users/472667/screenshots/3646584/isometric_moving_company_truck_1x.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.project-box2 {
+    position: relative;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background: url('https://pbs.twimg.com/profile_images/570314414511759360/Krj6MUBi_400x400.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.project-box3 {
+    position: relative;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background: url('https://319heads.com/cms/wp-content/uploads/2016/07/chm-logo-animation.gif') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.project-box4 {
+    position: relative;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background: url('https://cdn.dribbble.com/users/380831/screenshots/2542519/kolm-dance-academy-website-landing-page-dribbble-v2-shot_1x.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.grey-bg {
+    background: #efefef;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.grey-bg:hover {
+    opacity: .9;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    padding: 60px;
+    width: 100%;
+
+}
+
+.project-details {
+    position: relative;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.project-title {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.scroll-section {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 56px;
+}
+
+.fa-long-arrow-alt-right {
+    position: absolute;
+    right: 56px;
+    bottom: 48px;
+    font-size: 3em;
+}
+
+.fa-long-arrow-alt-right a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*menu*/
+
+.hamburger-menu {
+    position: fixed;
+    right: 36px;
+    top: 26px;
+    padding: 20px;
+    visibility: visible;
+}
+
+.hamburger-menu .fa-bars {
+    color: black;
+    font-size: 2em;
+}
+
+.menu {
+    background: #4a21fc;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out;
+    visibility: hidden;
+
+}
+
+.active {
+    transform: translate(0, 0);
+    visibility: visible;
+}
+
+nav {
+    width: 400px;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: white;
+    padding: .4em;
+}
+
+.menu a:hover {
+    color: lightgray;
+}
+
+.exit-ham-menu {
+    position: fixed;
+    right: 36px;
+    top: 20px;
+    padding: 20px;
+    visibility: visible;
+}
+
+.exit-ham-menu .fa-bars {
+    color: white;
+    font-size: 2em;
+}
+
+
+/*Media Query*/
+
+/*phone*/
+
+@media (max-width:767px) {
+    .info-section {
+        position: static;
+        padding: 100px;
+    }
+    .content-section {
+        margin-left: 0;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+    .project-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*tablet*/
+
+@media (min-width:768px) and (max-width:992px) {
+    .info-section {
+        position: static;
+        padding: 100px;
+    }
+    .content-section {
+        margin-left: 0;
+        width: 100%;
+        overflow: scroll;
+    }
+    .content-section:after {
+        height: auto;
+    }
+    .hamburger-menu {
+        position: absolute;
+    }
+    .project-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*laptop*/
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+/*extra big*/
+
+@media (min-width:1200px) and (max-width:1368px) {}
+
+/*Smaller phone in height*/
+
+@media (min-height:500px) and (max-height:700px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+/*/
